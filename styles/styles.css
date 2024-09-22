@@ -1,0 +1,146 @@
+.polaroid {
+  max-width: 220px;
+  padding: 16px 10px 0px;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.polaroid p {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.selim {
+  font-family: "Mel";
+  color: pink;
+}
+
+.first_block .polaroid_wrapper {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  min-height: 60vh;
+}
+.first_block .polaroid_wrapper .polaroid:first-child {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-15deg);
+}
+.first_block .polaroid_wrapper .polaroid:first-child img {
+  height: 200px;
+}
+.first_block .polaroid_wrapper .polaroid:last-child {
+  top: 150px;
+  right: 10px;
+  transform: rotate(15deg);
+}
+.first_block .polaroid_wrapper .polaroid:last-child img {
+  height: 200px;
+}
+.first_block .love_names {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 48px;
+}
+.first_block .love_names p {
+  line-height: 40px;
+}
+.first_block .love_names img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.recognize {
+  min-height: 60vh;
+  position: relative;
+}
+.recognize .info {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recognize .info p {
+  line-height: 24px;
+}
+.recognize .polaroid {
+  margin: 0 auto;
+  position: static;
+  margin-top: 20px;
+  transform: rotate(-9deg);
+}
+.dear_guests {
+  text-align: center;
+}
+.dear_guests .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dear_guests .info p {
+  line-height: 24px;
+}
+.dear_guests .date {
+  padding: 10px;
+}
+
+.day_program h2 {
+  text-align: center;
+}
+.day_program .list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.day_program .list li {
+  display: flex;
+  justify-content: space-between;
+}
+.day_program .list li .time {
+  font-size: 24px;
+}
+.day_program .list li img {
+  width: 80px;
+}
+.day_program .list li div h3 {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.day_program .list li div p {
+  line-height: 24px;
+}
+
+.geolocation {
+  min-height: 50vh;
+  position: relative;
+}
+.geolocation .polaroid {
+  max-width: 300px;
+  margin: 0 auto;
+  position: static;
+}
+.geolocation .info {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.geolocation .info p {
+  margin: 0 auto;
+  width: 250px;
+}
+.geolocation .info button {
+  margin: 0 auto;
+  max-width: 250px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 24px;
+  background: rgb(93, 178, 206);
+  font-size: 20px;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,169 @@
+.polaroid {
+  max-width: 220px;
+  padding: 16px 10px 0px;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+
+  p {
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+
+.selim {
+  font-family: 'Mel';
+  color: pink;
+}
+
+.first_block {
+  .polaroid_wrapper {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    min-height: 60vh;
+    .polaroid:first-child {
+      top: 20px;
+      left: 10px;
+      transform: rotate(-15deg);
+      img {
+        height: 200px;
+      }
+    }
+    .polaroid:last-child {
+      top: 150px;
+      right: 10px;
+      transform: rotate(15deg);
+      img {
+        height: 200px;
+      }
+    }
+  }
+  .love_names {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 48px;
+    p {
+      line-height: 40px;
+    }
+    img {
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.recognize {
+  min-height: 60vh;
+  position: relative;
+  .info {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+
+  .polaroid {
+    margin: 0 auto;
+    position: static;
+    margin-top: 20px;
+    transform: rotate(-9deg);
+    img {
+      // height: 200px;
+    }
+  }
+}
+
+.dear_guests {
+  text-align: center;
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+
+  .date {
+    padding: 10px;
+  }
+}
+
+.day_program {
+  h2 {
+    text-align: center;
+  }
+  .list {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      .time {
+        font-size: 24px;
+      }
+      img {
+        width: 80px;
+      }
+      div {
+
+        h3 {
+          font-size: 24px;
+          letter-spacing: 3px;
+        }
+        p {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.geolocation {
+  min-height: 50vh;
+  position: relative;
+  .polaroid {
+    max-width: 300px;
+    margin: 0 auto;
+    position: static;
+  }
+  .info {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      margin: 0 auto;
+      width: 250px;
+    }
+
+    button {
+      margin: 0 auto;
+      max-width: 250px;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 24px;
+      background: rgb(93, 178, 206);
+      font-size: 20px;
+      border: none;
+      outline: none;
+    }
+  }
+}
