@@ -6,6 +6,14 @@
   font-family: 'Mel';
   src: url(./fonts/LC\ Chalk.ttf);
 }
+@font-face {
+  font-family: 'Dear';
+  src: url(./fonts/ofont.ru_Czizh.ttf);
+}
+@font-face {
+  font-family: 'Comfort';
+  src: url(./fonts/ofont.ru_Comfortaa.ttf);
+}
 
 * {
   margin: 0;
@@ -18,20 +26,26 @@ html {
 }
 
 body {
-  font-family: "Advent Pro", sans-serif;
-
+  font-family: "Dear", sans-serif;
+  color: rgb(37, 55, 89);
   background: #d4d4d4;
+}
+
+h2 {
+  /* font-family: "Comfort", sans-serif; */
+
 }
 
 main {
   max-width: 425px;
   width: 100%;
+  overflow: hidden;
   padding: 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10vh;
-  background: #f4f4f4;
+  background: #fff;
 }
 
 img {

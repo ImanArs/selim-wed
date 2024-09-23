@@ -5,24 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <main>
     <div class="first_block">
       <div class="polaroid_wrapper">
         <div class="card_wrapper">
-          <div class="polaroid">
-            <img src="./assets/images/child-man.PNG" alt="">
-            <p>Селим</p>
-          </div>
-          <div class="right-bottom"></div>
+          <img src="./assets/images/child-man-pl.png" alt="">
+          <p>Селим</p>
         </div>
         <div class="card_wrapper">
-          <div class="polaroid"> 
-            <img src="./assets/images/child-girl.PNG" alt="">
-            <p>Айпеша</p>
-          </div>
-          <div class="right-bottom"></div>
+          <img src="./assets/images/child-girl-pl.png" alt="">
+          <p>Айпеша</p>
         </div>
       </div>
 
@@ -34,7 +29,7 @@
       
     </div>
 
-    <div class="recognize">
+    <div class="recognize" data-aos="fade-right">
       <div class="info">
         <h2>Узнали ?</h2>
         <p>Время пронеслось незаметно и у этих</p>
@@ -42,15 +37,12 @@
         <p>Да-да, мы сами в шоке!</p>
       </div>
       <div class="card_wrapper">
-        <div class="polaroid"> 
-          <img src="./assets/images/recognize.JPG" alt="">
-          <p>Сердца полны любви</p>
-        </div>
-        <div class="right-bottom"></div>
+        <img src="./assets/images/recognize-pl.png" alt="">
+        <p>Сердца полны любви</p>
       </div>
     </div>
 
-    <div class="dear_guests">
+    <div class="dear_guests" data-aos="fade-left">
       <div class="info">
         <h2>Дорогие и любимые</h2>
         <p>Наша свадьба без вас не будет</p>
@@ -64,7 +56,7 @@
       </div>
     </div>
 
-    <div class="day_program">
+    <div class="day_program" data-aos="fade-right">
       <h2>Программа дня</h2>
       <ul class="list">
         <li>
@@ -100,22 +92,84 @@
       </ul>
     </div>
 
-    <div class="geolocation">
+    <div class="geolocation" data-aos="fade-up">
+      <h2>Место проведения</h2> 
       <div class="card_wrapper">
-        <div class="polaroid"> 
-          <img src="https://static.tildacdn.com/tild6334-3237-4233-b739-643733393238/d__1__0026.jpg" alt="">
-          <p>Ресторан Ulu Too</p>
-        </div>
-        <div class="right-bottom"></div>
+        <img src="./assets/images/restaurant-pl.png" alt="">
+        <p>Ресторан Улуу-Тоо</p>
       </div>
       <div class="info">
-        <p>Мы ждем вас на берегу озера Сенеж в загородном комплексе The Sun Event.</p>
+        <p>С радостью приглашаем вас на свадебное торжество в ресторан "Улуу-Тоо".</p>
         <button>Посмотреть на карте</button>
       </div>
     </div>
 
+    <div class="wishes" data-aos="flip-up">
+      <h2>Пожелания</h2>
+      <img class="flower" src="https://static.tildacdn.com/tild3066-3263-4639-b238-376139373231/Group_86.svg" alt="">
+      <p>Мы безмерно благодарны за вашу любовь и поддержку. Ваше присутствие на нашей свадьбе — самый лучший подарок. С нетерпением ждем момента, когда сможем вместе отпраздновать это важное событие.</p>
+      <img class="line" src="https://static.tildacdn.com/tild3861-3961-4233-b635-376534323733/Clip_path_group_7.svg" alt="">
+      <p>Если хотите подарить нам ценный и нужный подарок, мы будем очень благодарны за вклад в бюджет нашей молодой семьи.</p>
+    </div>
+
+    <div class="Anketa" data-aos="fade-left">
+      <div class="info">
+        <h2>Анкета гостя</h2>
+        <p>Просим вас ответить на несколько вопросов до 20 июля, это поможет нам в организации торжества</p>
+      </div>
+
+      <form action="">
+        <div class="first_form">
+          <label class="input">
+            Ваше имя и фамилия
+            <input type="text">
+          </label>
+          <label>          
+            <input type="radio" name="attendance">
+            Смогу / сможем присутствовать
+          </label>
+          <label>          
+            <input type="radio" name="attendance">
+            Затрудняюсь ответить, сообщу позже
+          </label>
+          <label>
+            <input type="radio" name="attendance">
+            Не смогу прийти
+          </label>
+        </div>
+        <div class="second_form">
+          <p>Какие напитки вы хотели бы видеть на баре?</p>
+          <label>
+            <input type="checkbox">
+            Безалкогольные коктейли
+          </label>
+          <label>
+            <input type="checkbox">
+            Соки и вода
+          </label>
+          <label>
+            <input type="checkbox">
+            Кофе и чай
+          </label>
+        </div>
+        <button>отправить</button>
+      </form>
+    </div>
+
+    <div class="waiting">
+      <h2>Будем вас ждать!</h2>
+      <img class="heart" src="https://static.tildacdn.com/tild6138-3731-4739-b664-333562313338/Clip_path_group_5.svg" alt="">
+
+      <div class="card_wrapper">
+        <img src="./assets/images/gallery_2-pl.png" alt="">
+        <p>С большой любовью, Селим и Айпеша!</p>
+      </div>
+    </div>
 
   </main>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

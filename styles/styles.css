@@ -5,26 +5,23 @@
 
 .first_block .polaroid_wrapper {
   display: flex;
-  gap: 10px;
-  min-height: 60vh;
   position: relative;
+  height: 40vh;
 }
 .first_block .polaroid_wrapper .card_wrapper {
-  align-self: self-start;
-}
-.first_block .polaroid_wrapper .card_wrapper img {
-  height: 200px;
+  position: absolute;
+  width: 220px;
 }
 .first_block .polaroid_wrapper .card_wrapper:first-child {
-  left: 5%;
-  position: absolute;
+  left: 0;
   transform: rotate(-9deg);
+  animation: rotate 15s linear infinite;
 }
 .first_block .polaroid_wrapper .card_wrapper:last-child {
-  right: 5%;
-  position: absolute;
-  margin-top: 50px;
+  top: 70px;
+  right: -15px;
   transform: rotate(9deg);
+  animation: rotate-reverse 15s infinite;
 }
 .first_block .love_names {
   margin-top: 20px;
@@ -32,18 +29,13 @@
 }
 .first_block .love_names p {
   font-weight: 500;
-  font-size: 52px;
-  line-height: 40px;
+  font-size: 44px;
 }
 .first_block .love_names img {
   width: 100px;
   margin: 0 auto;
 }
 
-.recognize {
-  min-height: 60vh;
-  position: relative;
-}
 .recognize .info {
   width: 100%;
   margin: 0 auto;
@@ -54,10 +46,10 @@
 }
 .recognize .info h2 {
   font-weight: 500;
-  font-size: 52px;
+  font-size: 48px;
 }
 .recognize .info p {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 24px;
 }
 .recognize .card_wrapper {
@@ -65,8 +57,13 @@
   position: static;
   margin-top: 20px;
   transform: rotate(-9deg);
-  width: 50%;
+  width: 100%;
 }
+.recognize .card_wrapper p {
+  font-size: 18px;
+  bottom: 60px;
+}
+
 .dear_guests {
   text-align: center;
 }
@@ -77,26 +74,28 @@
 }
 .dear_guests .info h2 {
   font-weight: 500;
-  font-size: 52px;
+  font-size: 40px;
 }
 .dear_guests .info p {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 24px;
 }
 .dear_guests .date {
   margin-top: 30px;
   background-image: url("https://static.tildacdn.com/tild3737-6636-4761-b233-343566303366/Group_100_2.svg");
-  padding: 26px;
-  font-size: 52px;
+  padding: 32px;
+  font-size: 46px;
   background-size: 100% 100%;
 }
 
 .day_program h2 {
   text-align: center;
   letter-spacing: 3px;
+  font-size: 38px;
+  font-weight: 400;
 }
 .day_program .list {
-  width: 90%;
+  width: 94%;
   margin: 20px auto;
   margin-right: 0;
   margin-top: 30px;
@@ -107,38 +106,50 @@
 .day_program .list li {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .day_program .list li .time {
-  font-size: 33px;
+  margin-top: 14px;
+  font-size: 25px;
+  font-weight: 500;
 }
 .day_program .list li img {
   width: 50px;
   height: 60px;
+  align-self: self-start;
 }
 .day_program .list li div {
-  width: 180px;
+  margin-top: 14px;
 }
 .day_program .list li div h3 {
-  font-size: 34px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 500;
   letter-spacing: 3px;
 }
 .day_program .list li div p {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
 }
 
 .geolocation {
   min-height: 50vh;
-  position: relative;
 }
 .geolocation .card_wrapper {
-  max-width: 300px;
-  margin: 0 auto;
-  position: static;
+  max-width: 425px;
+  width: 100%;
+}
+.geolocation .card_wrapper p {
+  bottom: 14%;
+  font-weight: 600;
+  font-size: 18px;
+}
+.geolocation h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 47px;
 }
 .geolocation .info {
-  margin-top: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -147,8 +158,11 @@
 .geolocation .info p {
   margin: 0 auto;
   width: 250px;
+  font-size: 18px;
+  line-height: 26px;
 }
 .geolocation .info button {
+  cursor: pointer;
   margin: 0 auto;
   max-width: 250px;
   color: #fff;
@@ -158,12 +172,151 @@
   font-size: 20px;
   border: none;
   outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.geolocation .info button:hover {
+  background: rgba(93, 178, 206, 0.8);
 }
 
-.test {
-  width: 200px;
-  height: 200px;
+.wishes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.wishes h2 {
+  letter-spacing: 3px;
+  font-size: 38px;
+  font-weight: 400;
+}
+.wishes .flower {
+  width: 60px;
   margin: 0 auto;
-  background: blue;
-  position: relative;
+  animation: rotate 5s linear infinite;
+}
+.wishes p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Anketa {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.Anketa .info h2 {
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.Anketa .info p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.Anketa form .first_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Anketa form .first_form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Anketa form .first_form .input input {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0px;
+  width: 100%;
+  padding: 10px;
+}
+.Anketa form .first_form label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: start;
+  align-self: self-start;
+}
+.Anketa form .second_form {
+  display: flex;
+  flex-direction: column;
+}
+.Anketa form .second_form p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-align: start;
+}
+.Anketa form .second_form label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: start;
+  align-self: self-start;
+  margin-bottom: 16px;
+}
+.Anketa form button {
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 250px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 24px;
+  background: rgb(93, 178, 206);
+  font-size: 20px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.Anketa form button:hover {
+  background: rgba(93, 178, 206, 0.8);
+}
+
+.waiting {
+  text-align: center;
+}
+.waiting h2 {
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.waiting .heart {
+  width: 70px;
+  margin: 10px auto;
+  animation: rotate 5s linear infinite;
+}
+.waiting .card_wrapper {
+  transform: rotate(9deg);
+}
+.waiting .card_wrapper p {
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 14%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-9deg);
+  }
+  50% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(9deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
