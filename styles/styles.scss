@@ -1,15 +1,4 @@
-.polaroid {
-  max-width: 220px;
-  padding: 16px 10px 0px;
-  background: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
 
-  p {
-    padding: 30px 0;
-    text-align: center;
-  }
-}
 
 .selim {
   font-family: 'Mel';
@@ -18,36 +7,40 @@
 
 .first_block {
   .polaroid_wrapper {
-    position: relative;
     display: flex;
     gap: 10px;
     min-height: 60vh;
-    .polaroid:first-child {
-      top: 20px;
-      left: 10px;
-      transform: rotate(-15deg);
+    position: relative;
+
+    .card_wrapper {
+      align-self: self-start;
       img {
         height: 200px;
       }
-    }
-    .polaroid:last-child {
-      top: 150px;
-      right: 10px;
-      transform: rotate(15deg);
-      img {
-        height: 200px;
+      &:first-child {
+        left: 5%;
+        position: absolute;
+        transform: rotate(-9deg);
+      }
+      &:last-child {
+        right: 5%;
+        position: absolute;
+        margin-top: 50px;
+        transform: rotate(9deg);
       }
     }
   }
+
   .love_names {
-    margin-top: 70px;
+    margin-top: 20px;
     text-align: center;
-    font-size: 48px;
     p {
+      font-weight: 500;
+      font-size: 52px;
       line-height: 40px;
     }
     img {
-      width: 150px;
+      width: 100px;
       margin: 0 auto;
     }
   }
@@ -57,27 +50,31 @@
   min-height: 60vh;
   position: relative;
   .info {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
     h2 {
-
+      font-weight: 500;
+      font-size: 52px;
     }
     p {
+      font-size: 25px;
       line-height: 24px;
     }
   }
 
-  .polaroid {
+  .card_wrapper {
     margin: 0 auto;
     position: static;
     margin-top: 20px;
     transform: rotate(-9deg);
-    img {
-      // height: 200px;
+    // height: 200px;
+    width: 50%;
+
+    .polaroid {
     }
   }
 }
@@ -89,24 +86,34 @@
     flex-direction: column;
     gap: 10px;
     h2 {
-
+      font-weight: 500;
+      font-size: 52px;
     }
     p {
+      font-size: 25px;
       line-height: 24px;
     }
   }
 
   .date {
-    padding: 10px;
+    margin-top: 30px;
+    background-image: url('https://static.tildacdn.com/tild3737-6636-4761-b233-343566303366/Group_100_2.svg');
+    padding: 26px;
+    font-size: 52px;
+    background-size: 100% 100%;
   }
 }
 
 .day_program {
   h2 {
     text-align: center;
+    letter-spacing: 3px;
   }
   .list {
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
+    margin-right: 0;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -115,18 +122,21 @@
       justify-content: space-between;
 
       .time {
-        font-size: 24px;
+        font-size: 33px;
       }
       img {
-        width: 80px;
+        width: 50px;
+        height: 60px;
       }
       div {
-
+        width: 180px;
         h3 {
-          font-size: 24px;
+          font-size: 34px;
+          font-weight: 400;
           letter-spacing: 3px;
         }
         p {
+          font-size: 18px;
           line-height: 24px;
         }
       }
@@ -137,7 +147,8 @@
 .geolocation {
   min-height: 50vh;
   position: relative;
-  .polaroid {
+
+  .card_wrapper {
     max-width: 300px;
     margin: 0 auto;
     position: static;
@@ -166,4 +177,15 @@
       outline: none;
     }
   }
+}
+
+
+.test {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: blue;
+  position: relative;
+
+  
 }
