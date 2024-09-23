@@ -17,41 +17,17 @@
       &:first-child {
         left: 0;
         transform: rotate(-9deg);
-        animation: rotate 15s linear infinite;
       }
       &:last-child {
         top: 70px;
         right: -15px;
         transform: rotate(9deg);
-        animation: rotate-reverse 15s infinite;
       }
     }
-    // display: flex;
-    // gap: 10px;
-    // min-height: 60vh;
-    // position: relative;
-
-    // .card_wrapper {
-    //   align-self: self-start;
-    //   img {
-    //     height: 200px;
-    //   }
-    //   &:first-child {
-    //     left: 5%;
-    //     position: absolute;
-    //     transform: rotate(-9deg);
-    //   }
-    //   &:last-child {
-    //     right: 5%;
-    //     position: absolute;
-    //     margin-top: 50px;
-    //     transform: rotate(9deg);
-    //   }
-    // }
   }
 
   .love_names {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     p {
       font-weight: 500;
@@ -78,7 +54,7 @@
     }
     p {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 14px;
     }
   }
 
@@ -107,7 +83,7 @@
     }
     p {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 14px;
     }
   }
 
@@ -160,7 +136,7 @@
         p {
           font-size: 16px;
           font-weight: 400;
-          line-height: 24px;
+          line-height: 20px;
         }
       }
     }
@@ -193,7 +169,7 @@
       margin: 0 auto;
       width: 250px;
       font-size: 18px;
-      line-height: 26px;
+      line-height: 22px;
     }
 
     button {
@@ -237,7 +213,7 @@
   }
   p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
 
@@ -255,7 +231,7 @@
     p {
       margin-top: 20px;
       font-size: 18px;
-      line-height: 24px;
+      line-height: 20px;
     }
   }
   form {
@@ -283,28 +259,9 @@
         align-self: self-start;
       }
     }
-    .second_form {
-      display: flex;
-      flex-direction: column;
-      p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-top: 40px;
-        margin-bottom: 5px;
-        text-align: start;
-      }
-      label {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-        text-align: start;
-        align-self: self-start;
-        margin-bottom: 16px;
-      }
-    }
     button {
       cursor: pointer;
-      margin: 0 auto;
+      margin: 20px auto;
       max-width: 250px;
       color: #fff;
       padding: 10px 15px;
@@ -343,6 +300,36 @@
   }
 }
 
+.gallery {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  .card_wrapper {
+    position: absolute;
+    width: 220px;
+
+    &:nth-child(1) {
+      left: 0;
+      transform: rotate(9deg);
+    }
+    &:nth-child(2) {
+      top: 70px;
+      right: -15px;
+      transform: rotate(-9deg);
+    }
+    &:nth-child(3) {
+      bottom: 70px;
+      right: 70%;
+      transform: translate(50%, -50%) rotate(-5deg);
+    }
+    &:nth-child(4) {
+      bottom: 170px;
+      right: 0%;
+      transform: rotate(20deg);
+    }
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(-9deg);
@@ -364,4 +351,11 @@
   100% {
     transform: rotate(9deg);
   }
+}
+
+.deg9 {
+  transform: rotate(9deg);
+}
+.deg-5 {
+  transform: rotate(-5deg);
 }
