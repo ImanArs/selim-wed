@@ -7,19 +7,26 @@
   display: flex;
   position: relative;
   height: 40vh;
+  margin: 60px 0;
 }
 .first_block .polaroid_wrapper .card_wrapper {
   position: absolute;
-  width: 220px;
+  width: 230px;
+}
+.first_block .polaroid_wrapper .card_wrapper p {
+  font-size: 20px;
+  text-align: center;
 }
 .first_block .polaroid_wrapper .card_wrapper:first-child {
   left: 0;
   transform: rotate(-9deg);
+  animation: rotate 5s linear infinite;
 }
 .first_block .polaroid_wrapper .card_wrapper:last-child {
   top: 70px;
   right: -15px;
   transform: rotate(9deg);
+  animation: rotate-reverse 5s linear infinite;
 }
 .first_block .love_names {
   margin-top: 40px;
@@ -81,8 +88,8 @@
 .dear_guests .date {
   margin-top: 30px;
   background-image: url("https://static.tildacdn.com/tild3737-6636-4761-b233-343566303366/Group_100_2.svg");
-  padding: 32px;
-  font-size: 46px;
+  padding: 40px 32px;
+  font-size: 40px;
   background-size: 100% 100%;
 }
 
@@ -134,11 +141,11 @@
   min-height: 50vh;
 }
 .geolocation .card_wrapper {
-  max-width: 425px;
   width: 100%;
+  margin: 0 auto;
 }
 .geolocation .card_wrapper p {
-  bottom: 14%;
+  bottom: 17%;
   font-weight: 600;
   font-size: 18px;
 }
@@ -255,6 +262,36 @@
   background: rgba(93, 178, 206, 0.8);
 }
 
+.gallery {
+  display: flex;
+  position: relative;
+  height: 70vh;
+}
+.gallery .card_wrapper {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+}
+.gallery .card_wrapper:nth-child(1) {
+  left: 0;
+  transform: rotate(9deg);
+}
+.gallery .card_wrapper:nth-child(2) {
+  top: 70px;
+  right: -15px;
+  transform: rotate(-9deg);
+}
+.gallery .card_wrapper:nth-child(3) {
+  top: 45%;
+  right: 70%;
+  transform: translate(50%, -50%) rotate(-5deg);
+}
+.gallery .card_wrapper:nth-child(4) {
+  top: 50%;
+  left: 50%;
+  transform: rotate(20deg);
+}
+
 .waiting {
   text-align: center;
 }
@@ -277,55 +314,26 @@
   bottom: 14%;
 }
 
-.gallery {
-  display: flex;
-  position: relative;
-  height: 100vh;
-}
-.gallery .card_wrapper {
-  position: absolute;
-  width: 220px;
-}
-.gallery .card_wrapper:nth-child(1) {
-  left: 0;
-  transform: rotate(9deg);
-}
-.gallery .card_wrapper:nth-child(2) {
-  top: 70px;
-  right: -15px;
-  transform: rotate(-9deg);
-}
-.gallery .card_wrapper:nth-child(3) {
-  bottom: 70px;
-  right: 70%;
-  transform: translate(50%, -50%) rotate(-5deg);
-}
-.gallery .card_wrapper:nth-child(4) {
-  bottom: 170px;
-  right: 0%;
-  transform: rotate(20deg);
-}
-
 @keyframes rotate {
   0% {
-    transform: rotate(-9deg);
+    transform: rotate(-6deg);
   }
   50% {
-    transform: rotate(9deg);
+    transform: rotate(6deg);
   }
   100% {
-    transform: rotate(-9deg);
+    transform: rotate(-6deg);
   }
 }
 @keyframes rotate-reverse {
   0% {
-    transform: rotate(9deg);
+    transform: rotate(6deg);
   }
   50% {
-    transform: rotate(-9deg);
+    transform: rotate(-6deg);
   }
   100% {
-    transform: rotate(9deg);
+    transform: rotate(6deg);
   }
 }
 .deg9 {
