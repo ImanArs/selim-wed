@@ -1,3 +1,20 @@
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+}
+
+.heart-icon {
+  width: 50px;
+  position: absolute;
+}
+
+.flower-icon {
+  width: 50px;
+  position: absolute;
+}
+
 .selim {
   font-family: "Mel";
   color: pink;
@@ -41,6 +58,16 @@
   margin: 0 auto;
 }
 
+.recognize {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+.recognize .star-recognize {
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+  width: 50px;
+}
 .recognize .info {
   width: 100%;
   margin: 0 auto;
@@ -51,10 +78,10 @@
 }
 .recognize .info h2 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 46px;
 }
 .recognize .info p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 14px;
 }
 .recognize .card_wrapper {
@@ -71,6 +98,8 @@
 
 .dear_guests {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: relative;
 }
 .dear_guests .info {
   display: flex;
@@ -79,10 +108,10 @@
 }
 .dear_guests .info h2 {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 36px;
 }
 .dear_guests .info p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 14px;
 }
 .dear_guests .date {
@@ -92,7 +121,19 @@
   font-size: 40px;
   background-size: 100% 100%;
 }
+.dear_guests .star {
+  top: 20%;
+  z-index: -1;
+}
+.dear_guests .heart-icon {
+  bottom: 50%;
+  left: 0;
+}
 
+.day_program {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
 .day_program h2 {
   text-align: center;
   letter-spacing: 3px;
@@ -136,9 +177,15 @@
   font-weight: 400;
   line-height: 20px;
 }
+.day_program .flower-icon {
+  bottom: 20px;
+  left: 0;
+  transform: rotate(87deg);
+}
 
 .geolocation {
   min-height: 50vh;
+  font-family: "Raleway", sans-serif;
 }
 .geolocation .card_wrapper {
   width: 100%;
@@ -152,6 +199,7 @@
 .geolocation h2 {
   text-align: center;
   font-size: 30px;
+  font-weight: 500;
   line-height: 47px;
 }
 .geolocation .info {
@@ -184,6 +232,7 @@
 }
 
 .wishes {
+  font-family: "Raleway", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -206,6 +255,7 @@
 }
 
 .Anketa {
+  font-family: "Raleway", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -263,6 +313,7 @@
 }
 
 .contacts {
+  font-family: "Raleway", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -324,6 +375,7 @@
   text-align: center;
 }
 .waiting h2 {
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   word-break: keep-all;
   font-weight: 400;

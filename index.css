@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url(./styles/styles.css);
 @import url(./styles/polaroid.css);
 
@@ -27,12 +30,14 @@ html {
 
 body {
   font-family: "Dear", sans-serif;
+  /* font-family: "Comfort", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
   color: rgb(37, 55, 89);
   background: #d4d4d4;
 }
 
 h2 {
-  /* font-family: "Comfort", sans-serif; */
 
 }
 

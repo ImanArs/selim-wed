@@ -40,6 +40,8 @@
         <img src="./assets/images/recognize-pl.png" alt="">
         <p>Сердца полны любви</p>
       </div>
+      <img class="star-recognize" src="https://static.tildacdn.com/tild6339-6536-4637-b732-323462356363/Group_93_1.svg" alt="">
+      <img class="star" src="https://static.tildacdn.com/tild6339-6536-4637-b732-323462356363/Group_93_1.svg" alt="">
     </div>
 
     <div class="dear_guests" data-aos="fade-left">
@@ -52,12 +54,15 @@
       </div>
 
       <div class="date">
-        <p>12-10-2024</p>
+        <p>12/10/2024</p>
       </div>
 
       <div class="card_wrapper deg9">
         <img src="./assets/images/dear_guests-pl.png" alt="">
       </div>
+      
+      <img class="star" src="https://static.tildacdn.com/tild6339-6536-4637-b732-323462356363/Group_93_1.svg" alt="">
+      <img class="heart-icon" src="https://static.tildacdn.com/tild6138-3731-4739-b664-333562313338/Clip_path_group_5.svg" alt="">
     </div>
 
     <div class="day_program" data-aos="fade-right">
@@ -97,6 +102,7 @@
       <div class="card_wrapper deg-5">
         <img src="./assets/images/day_program-pl.png" alt="">
       </div>
+      <img class="flower-icon" src="https://static.tildacdn.com/tild3066-3263-4639-b238-376139373231/Group_86.svg" alt="">
     </div>
 
     <div class="geolocation" data-aos="fade-up">
@@ -128,26 +134,26 @@
         <p>Просим вас ответить на несколько вопросов до 12 октября, это поможет нам в организации торжества</p>
       </div>
 
-      <form action="">
+      <form id="form">
         <div class="first_form">
           <label class="input">
             Ваше имя и фамилия
-            <input type="text">
+            <input type="text" id="name" placeholder="Впешите имя здесь">
           </label>
           <label>          
-            <input type="radio" name="attendance">
+            <input type="radio" name="attendance" value="Смогу / сможем присутствовать">
             Смогу / сможем присутствовать
           </label>
           <label>          
-            <input type="radio" name="attendance">
+            <input type="radio" name="attendance" value="Затрудняюсь ответить, сообщу позже">
             Затрудняюсь ответить, сообщу позже
           </label>
           <label>
-            <input type="radio" name="attendance">
+            <input type="radio" name="attendance" value="Не смогу прийти">
             Не смогу прийти
           </label>
         </div>
-        <button>отправить</button>
+        <button type="submit">отправить</button>
       </form>
     </div>
 
