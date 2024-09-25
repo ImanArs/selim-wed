@@ -74,7 +74,7 @@
           <div>
             <h3>Welcome</h3>
             <p>Время пролетит</p>
-            <p>незаметно за игристым</p>
+            <p>незаметно за столом</p>
             <p>и новыми знакомствами</p>
           </div>
         </li>
@@ -138,22 +138,25 @@
         <div class="first_form">
           <label class="input">
             Ваше имя и фамилия
-            <input type="text" id="name" placeholder="Впешите имя здесь">
+            <input type="text" id="name">
           </label>
-          <label>          
-            <input type="radio" name="attendance" value="Смогу / сможем присутствовать">
-            Смогу / сможем присутствовать
-          </label>
-          <label>          
-            <input type="radio" name="attendance" value="Затрудняюсь ответить, сообщу позже">
-            Затрудняюсь ответить, сообщу позже
-          </label>
-          <label>
-            <input type="radio" name="attendance" value="Не смогу прийти">
-            Не смогу прийти
-          </label>
+          <div class="radio">
+            <p>Сможете ли вы присутствовать?</p>
+            <label>
+              <input type="radio" name="attendance" value="Смогу / сможем присутствовать">
+              Смогу / сможем присутствовать
+            </label>
+            <label>
+              <input type="radio" name="attendance" value="Затрудняюсь ответить, сообщу позже">
+              Затрудняюсь ответить, сообщу позже
+            </label>
+            <label>
+              <input type="radio" name="attendance" value="Не смогу прийти">
+              Не смогу прийти
+            </label>
+          </div>
         </div>
-        <button type="submit">отправить</button>
+        <button type="submit">Отправить</button>
       </form>
     </div>
 
@@ -196,7 +199,7 @@
 
       <div class="card_wrapper">
         <img src="./assets/images/gallery_2-pl.png" alt="">
-        <p>С большой любовью, Селим и Айпери!</p>
+        <p>С большой любовью, <br> Селим и Айпери!</p>
       </div>
     </div>
 

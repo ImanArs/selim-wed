@@ -31,7 +31,7 @@
   width: 230px;
 }
 .first_block .polaroid_wrapper .card_wrapper p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 .first_block .polaroid_wrapper .card_wrapper:first-child {
@@ -51,7 +51,7 @@
 }
 .first_block .love_names p {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 34px;
 }
 .first_block .love_names img {
   width: 100px;
@@ -61,6 +61,9 @@
 .recognize {
   font-family: "Raleway", sans-serif;
   position: relative;
+}
+.recognize .star {
+  top: -20px;
 }
 .recognize .star-recognize {
   position: absolute;
@@ -78,10 +81,10 @@
 }
 .recognize .info h2 {
   font-weight: 500;
-  font-size: 46px;
+  font-size: 30px;
 }
 .recognize .info p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 14px;
 }
 .recognize .card_wrapper {
@@ -92,7 +95,7 @@
   width: 100%;
 }
 .recognize .card_wrapper p {
-  font-size: 18px;
+  font-size: 14px;
   bottom: 60px;
 }
 
@@ -108,16 +111,17 @@
 }
 .dear_guests .info h2 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 30px;
+  margin-bottom: 18px;
 }
 .dear_guests .info p {
-  font-size: 18px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 18px;
 }
 .dear_guests .date {
   margin-top: 30px;
   background-image: url("https://static.tildacdn.com/tild3737-6636-4761-b233-343566303366/Group_100_2.svg");
-  padding: 40px 32px;
+  padding: 26px;
   font-size: 40px;
   background-size: 100% 100%;
 }
@@ -136,8 +140,7 @@
 }
 .day_program h2 {
   text-align: center;
-  letter-spacing: 3px;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 400;
 }
 .day_program .list {
@@ -147,35 +150,37 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 26px;
 }
 .day_program .list li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
 }
 .day_program .list li .time {
   margin-top: 14px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .day_program .list li img {
-  width: 50px;
-  height: 60px;
+  width: 40px;
+  height: 50px;
   align-self: self-start;
 }
 .day_program .list li div {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .day_program .list li div h3 {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 23px;
+  font-weight: 400;
   letter-spacing: 3px;
+  line-height: 39px;
 }
 .day_program .list li div p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
 }
 .day_program .flower-icon {
   bottom: 43%;
@@ -192,8 +197,8 @@
 }
 .geolocation .card_wrapper p {
   bottom: 17%;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .geolocation h2 {
   text-align: center;
@@ -210,8 +215,8 @@
 .geolocation .info p {
   margin: 0 auto;
   width: 250px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 26px;
 }
 .geolocation .info button {
   cursor: pointer;
@@ -240,17 +245,17 @@
 }
 .wishes h2 {
   letter-spacing: 3px;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 400;
 }
 .wishes .flower {
-  width: 60px;
+  width: 45px;
   margin: 0 auto;
   animation: rotate 5s linear infinite;
 }
 .wishes p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .Anketa {
@@ -261,14 +266,14 @@
   gap: 26px;
 }
 .Anketa .info h2 {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .Anketa .info p {
   margin-top: 20px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 28px;
 }
 .Anketa form .first_form {
   display: flex;
@@ -276,9 +281,15 @@
   gap: 20px;
 }
 .Anketa form .first_form .input {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
+  text-align: start;
 }
 .Anketa form .first_form .input input {
   border: none;
@@ -287,22 +298,44 @@
   width: 100%;
   padding: 10px;
 }
-.Anketa form .first_form label {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
+.Anketa form .first_form .radio {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 16px;
+}
+.Anketa form .first_form .radio p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+.Anketa form .first_form .radio label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
   text-align: start;
   align-self: self-start;
+  position: relative;
+}
+.Anketa form .first_form .radio label input {
+  padding: 10px;
 }
 .Anketa form button {
+  font-family: "Raleway", sans-serif;
   cursor: pointer;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 250px;
+  width: 100%;
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 24px;
+  padding: 20px 15px;
+  border-radius: 60px;
   background: rgb(93, 178, 206);
-  font-size: 20px;
+  font-size: 16px;
   border: none;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -325,15 +358,17 @@
   gap: 10px;
 }
 .contacts .info h2 {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 400;
-  letter-spacing: 3px;
+  line-height: 47px;
 }
 .contacts .info p {
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
 }
 .contacts a {
-  font-size: 28px;
+  font-size: 26px;
   color: #000;
   text-decoration: none;
 }
@@ -382,8 +417,8 @@
 }
 .waiting h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
-  word-break: keep-all;
+  font-size: 30px;
+  white-space: nowrap;
   font-weight: 400;
   letter-spacing: 3px;
 }
@@ -396,8 +431,9 @@
   transform: rotate(9deg);
 }
 .waiting .card_wrapper p {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
+  white-space: nowrap;
   bottom: 14%;
 }
 

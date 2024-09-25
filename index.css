@@ -29,10 +29,10 @@ html {
 }
 
 body {
-  font-family: "Dear", sans-serif;
+  /* font-family: "Dear", sans-serif; */
   /* font-family: "Comfort", sans-serif; */
   /* font-family: "Montserrat", sans-serif; */
-  /* font-family: "Raleway", sans-serif; */
+  font-family: "Raleway", sans-serif;
   color: rgb(37, 55, 89);
   background: #d4d4d4;
 }
